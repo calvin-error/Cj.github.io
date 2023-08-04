@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Tektur', cursive;
+    text-decoration: none;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.Port {
+    position: relative;
+    font-size: 40px;
+    margin: 10px 40px;
+}
+nav ul {
+    position: relative;
+    list-style: none;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid;
+
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+nav ul li:last-child{
+    margin-right: 70px;
+}
+nav ul li:hover {
+    background-color: rgb(141, 154, 154);
+    color: white;
+}
+/* ------------nav---------- */
+.container2 {
+    position: relative;
+    height: 400px;
+    width: 900px;
+    margin-top: 120px;
+    margin-left: 180px;
+    border: 1px solid;
+    justify-content: ;
+}
+.finalcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the container covers the full viewport height */
+    border: 1px solid;
+    
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 4s ease;
+    border-radius: 25px;
+    
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.front   {
+    position: absolute;
+    background-color: rgb(123,122,118);
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100% ;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    
+    
+    
+}
+.back {
+    position: absolute;
+    transform-style: preserve-3d;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100% ;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    border-radius: 25px;
+    border: 1px solid;
+}
+.fronts  {
+    transform: translateZ(30px);
+    padding: 30px 30px;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+
+
+
+}
+.backs{
+    transform: translateZ(30px)
+}
+.image img {
+    height: 350px;
+    width: 250px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.amaw {
+    font-size: 50px;
+    transform: translateZ(80px);
+}
+.atay {
+    font-size: 40px;
+}
+#hoverButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* Add any other button styles here */
+  }
+.back .image img {
+    height: 200px;
+    width: 200px;
+}
+.back h1 {
+    color: white;
+}
+.back p {
+    color: white;
+    size: 100px;
+}
+.image {
+    display: flex  ;
+    align-items: center;
+    justify-content: space-around;
+}
+.text {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.client {
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 280px;
+    margin-left: 320px;
+
+}
+.fronts {
+    transform: translateZ(50px);
+}
+.image {
+    transform: translateZ(50px);
+}
+.text {
+    transform: translateZ(50px);
+}
+.client {
+    transform: translateZ(50px);
+}
+.client {
+    color: white    ;
+}
+/* ------------------------------------------- */
+/* Style for tablets in portrait mode */
+@media screen and  (max-width: 370px)  {
+    .Port {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    nav ul li {
+        padding: 2px 7px;
+        margin-right: 50px;
+        display: block;
+
+
+    }
+    .finalcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensures the container covers the full viewport height */
+        border: 1px solid;
+        
+    }
+    nav ul li:last-child{
+        margin-right: 5px;
+    }
+    nav ul li {
+        position: relative;
+        display: inline-block;
+        padding: 1px 3px;
+        margin: 2px ;
+        border: 1px solid;
+        margin-top: 13px;
+        margin-left: 10px;
+
+        justify-content: center;
+        align-items: center;
+    
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+    .front   {
+        position: absolute;
+        background-color: rgb(123,122,118);
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100% ;
+        backface-visibility: hidden;
+        border-radius: 25px;
+        
+        
+        
+    }
+    .thefinal {
+        display: flex;
+        justify-content: center;
+        height: 30vh; /* Ensures the container covers the full viewport height */
+        
+
+    }
+    .container2 {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin-top: 100px;
+        margin-left: 5px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .back {
+        position: absolute;
+        transform-style: preserve-3d;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100% ;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        border-radius: 10px;
+        border-radius: 25px;
+        border: 1px solid;
+
+    }
+    .image img {
+        height: 70px;
+        width: 60px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .amaw {
+        font-size: 25px;
+        transform: translateZ(80px);
+    }
+    .atay {
+        font-size: 10px;
+    }
+    .back .image img {
+        height: 90px;
+        width: 90px;
+    }
+    .back h1 {
+        color: white;
+    }
+    .back p {
+        color: white;
+        size: 100px;
+    }
+    .image {
+        display: flex  ;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .text {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .amawka {
+        color: white;
+        font-size: 10px;
+        padding-left: 50px;
+        padding-top: 30px;
+
+    
+    }
+    
+  }
+/* --------------------------- */
+@media screen and  (max-width: 470px) and (min-width: 371px)
